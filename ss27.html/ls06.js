@@ -1,0 +1,30 @@
+let arr = [];
+let num = +prompt("Mời bạn nhập số phần tử của mảng");
+
+if (num > 0 && !Number.isNaN(num)) {
+    for (let i = 0; i < num; i = i + 1) {
+        let element = +prompt("Mời bạn nhập phần tử");
+        if (!isNaN(element) && !Number.isNaN(element)) {
+            arr.push(element);
+        } else {
+            console.log("dữ liệu bạn nhập ko hợp lệ");
+            i = i - 1;
+        }
+    }
+    console.log(kiemTraCapSoCong(arr));
+} else {
+    console.log("dữ liệu bạn nhập ko hợp lệ");
+}
+
+function kiemTraCapSoCong(arr) {
+    if (arr.length < 2) {
+        return "FALSE";
+    }
+    let d = arr[1] - arr[0];
+    for (let i = 2; i < arr.length; i = i + 1) {
+        if (arr[i] - arr[i - 1] !== d) {
+            return "FALSE";
+        }
+    }
+    return "TRUE";
+}
