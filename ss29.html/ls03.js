@@ -8,10 +8,10 @@ let menuPrompt = `
  5. Tìm kiếm món ăn theo tên trong toàn bộ menu.
  6. Thoát
  
- Mời bạn nhập lựa chọn : 
+ Lựa chọn của bạn là: 
  `;
-
 let input;
+
 while (input !== 6) {
     input = +prompt(menuPrompt);
     switch (input) {
