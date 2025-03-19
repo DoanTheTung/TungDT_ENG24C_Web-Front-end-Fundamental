@@ -1,0 +1,28 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 50px auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid gray;
+}
+
+button {
+    padding: 8px 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 16px;
+}
