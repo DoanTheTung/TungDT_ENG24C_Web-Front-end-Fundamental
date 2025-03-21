@@ -1,7 +1,7 @@
-let div = document.body;
 let bn = document.getElementById("btn");
 bn.onclick=function(){
-    if (div.style.backgroundColor=="white") {
+    let div = document.body;
+    if (div.style.backgroundColor==="white") {
         div.style.backgroundColor="black";
         div.style.color="white";
     }else{

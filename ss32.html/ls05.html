@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./ls05.css">
+ </head>
+ <body>
+     <div class="container">
+         <h2>To-Do List K24_PTIT</h2>
+         <div class="input-section">
+             <input type="text" id="taskInput" placeholder="Nhập nhiệm vụ...">
+             <button onclick="addTask()">Thêm</button>
+         </div>
+         <ul id="taskList">
+             <li>học dom js<button class="delete-btn" onclick="deleteTask(this)">X</button></li>
+             <li>làm bài tập dom js<button class="delete-btn" onclick="deleteTask(this)">X</button></li>
+         </ul>
+     </div>
+     <script src="./ls05.js"></script>
+ </body>
+ </html>
