@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ls04.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Danh sách nhân viên Rikkei</h2>
+        <div id="notification" class="notification" style="display: none;"></div>
+        <div class="input-group">
+            <div class="input-row">
+                <label for="nameInput">Tên nhân viên: </label>
+                <input type="text" id="nameInput">
+                <label for="positionInput">Chức vụ: </label>
+                <input type="text" id="positionInput">
+            </div>
+            <button id="addBtn">Thêm nhân viên</button>
+        </div>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Chức vụ</th>
+
+                </tr>
+            </thead>
+            <tbody id="employeeList"></tbody>
+        </table>
+        <div class="pagination" id="pagination">
+            <button id="prevBtn" class="page-btn">Previous</button>
+            <div id="pageNumbers" class="page-numbers"></div>
+            <button id="nextBtn" class="page-btn">Next</button>
+        </div>
+    </div>
+    <script src="./ls04.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ls05.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Danh mục</h2>
+        <div class="controls">
+            <div class="search-group">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên...">
+            </div>
+            <div class="filter-group">
+                <select id="statusFilter">
+                    <option value="all">Tất cả</option>
+                    <option value="active">Hoạt động</option>
+                    <option value="inactive">đang hoạt động</option>
+                </select>
+            </div>
+            <button id="addItemBtn" class="add-btn">Thêm mới danh mục</button>
+        </div>
+        <table id="itemTable">
+            <thead>
+                <tr>
+                    <th>Mã danh mục</th>
+                    <th>Tên danh mục</th>
+                    <th>Trạng thái</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody id="itemList"></tbody>
+        </table>
+    </div>
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">×</span>
+            <h3 id="modalTitle">Thêm mục lục</h3>
+            <form id="itemForm">
+                <div class="form-group">
+                    <label for="itemName">Mã danh mục <span class="required">*</span></label>
+                    <input type="text" id="itemName" name="itemName">
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Tên danh mục<span class="required">*</span></label>
+                    <textarea id="itemDescription" name="itemDescription"></textarea>
+                    <span id="descriptionError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="itemStatus">Trạng thái</label>
+                    <input type="checkbox" id="itemStatus" name="itemStatus"> Hoạt động
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="cancelBtn" class="cancel-btn">Hủy</button>
+                    <button type="submit" id="submitBtn" class="submit-btn">Thêm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./ls05.js"></script>
+</body>
+
+</html>
