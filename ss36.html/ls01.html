@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ls01.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="h2">Chào mừng bạn!</h2>
+        <div id="nameForm">
+            <input type="text" id="nameInput" placeholder="Nhập tên của bạn...">
+            <button onclick="saveName()">Lưu</button>
+        </div>
+        <div id="greeting" style="display: none;">
+            <h3>👋 Chào bạn, <span id="displayName"></span>!</h3>
+            <button onclick="changeName()">Đổi tên</button>
+        </div>
+    </div>
+    <script src="./ls01.js"></script>
+</body>
+
+</html>
